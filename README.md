@@ -53,3 +53,40 @@ NIST SP 800-30 Rev. 1
 The publicly accessible database represents a critical security risk.
 Restricting database exposure and implementing layered security controls
 would significantly reduce the likelihood and impact of compromise.
+# USB Baiting Attack — Cybersecurity Risk Assessment
+
+## Overview
+A cybersecurity risk assessment examining the risks associated with
+an unknown USB drive containing personal and organizational information.
+
+## Scenario
+A USB drive belonging to an HR manager at a hospital is discovered.
+The drive contains both personal and work-related files.
+
+## Key Risks
+- USB baiting
+- Malware introduction
+- Social engineering
+- PII exposure
+- Unauthorized access
+- Information leakage
+
+## Attacker Mindset
+[Your Attacker Mindset section]
+
+## Risk Analysis
+[Your Risk Analysis section]
+
+## Recommended Controls
+- USB device controls
+- Endpoint protection
+- Malware scanning
+- Security awareness training
+- Encryption
+- Access controls
+- Separation of personal and business USB devices
+
+## Conclusion
+Unknown removable media should be treated as untrusted. Combining
+technical controls, employee awareness, and organizational policies
+can significantly reduce the risk associated with USB baiting attacks.
