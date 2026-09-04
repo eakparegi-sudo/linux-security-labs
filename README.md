@@ -13,3 +13,5 @@ Also did, filter by department using WHERE department equals IT. Expected result
 Also, find employees with salaries greater than 65,000. Expected result lists only higher earners.
 lastly, sort by salary descending using ORDER BY salary DESC. Expected result shows employees from highest to lowest pay
 this was what i learned today
+# VULNERABILITY ASSESSMENT
+## 
