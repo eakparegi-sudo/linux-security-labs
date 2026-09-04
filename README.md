@@ -15,3 +15,41 @@ lastly, sort by salary descending using ORDER BY salary DESC. Expected result sh
 this was what i learned today
 # VULNERABILITY ASSESSMENT
 ## Performed a vulnerability assessment on a Linux database server using NIST methodology. Identified threats, rated likelihood and severity, and recommended practical mitigations.” then add one line like "Reinforced the importance of not hard-coding secrets in applications.
+# Vulnerability Assessment: E-commerce Database Server
+
+## Overview
+A qualitative vulnerability assessment of an e-commerce company's
+publicly accessible remote database server.
+
+## Objectives
+- Identify potential threat sources
+- Identify relevant threat events
+- Assess likelihood and severity
+- Calculate overall risk
+- Recommend remediation controls
+
+## Framework
+NIST SP 800-30 Rev. 1
+
+## Risk Assessment
+
+| Threat | Likelihood | Severity | Risk |
+|---|---:|---:|---:|
+| Unauthorized database access | 3 | 3 | 9 |
+| Malicious insider activity | 2 | 3 | 6 |
+| Denial-of-service attack | 2 | 3 | 6 |
+
+## Recommended Controls
+- Network access restrictions
+- Principle of least privilege
+- Multi-factor authentication
+- Encryption
+- Logging and monitoring
+- Defense in depth
+- Regular vulnerability assessments
+- Secure backups
+
+## Conclusion
+The publicly accessible database represents a critical security risk.
+Restricting database exposure and implementing layered security controls
+would significantly reduce the likelihood and impact of compromise.
