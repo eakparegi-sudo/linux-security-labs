@@ -1,0 +1,83 @@
+# 🔎 VirusTotal File Hash Investigation
+
+## 📌 Overview
+
+As part of the **Google Cybersecurity Certificate – Course 6: Sound the Alarm: Detection and Response**, I practiced investigating a suspicious file using its SHA-256 hash.
+
+The goal of this exercise was to use **VirusTotal** to determine whether the file had been identified as malicious by multiple security vendors and to interpret the results from a SOC analyst's perspective.
+
+---
+
+## 🎯 Investigation Objective
+
+- Analyze a suspicious file using its SHA-256 hash
+- Check the hash against multiple security vendors
+- Identify malware classifications
+- Review the overall detection results
+- Determine an appropriate analyst response
+
+---
+
+## 🧪 Investigation Details
+
+| Attribute | Finding |
+|---|---|
+| **File Name** | `bfsvc.exe` |
+| **File Size** | 430 KB |
+| **File Type** | PE Executable |
+| **SHA-256** | `54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f6b` |
+| **VirusTotal Detection** | **54 / 71** |
+| **Threat Category** | Trojan |
+| **Family Labels** | FlagPro, Fragtor |
+
+---
+
+## 🔍 VirusTotal Analysis
+
+I submitted the SHA-256 hash to **VirusTotal** to check whether the file had already been identified by security vendors.
+
+The result showed:
+
+> **54 / 71 security vendors flagged this file as malicious.**
+
+This was a strong indicator that the file was likely malicious because the detection was not coming from only one security vendor.
+
+Several vendors also classified the file as a **Trojan** or **Backdoor** and associated it with malware families such as **FlagPro** and **Fragtor**.
+
+---
+
+## 🚨 Notable Security Vendor Detections
+
+Some of the detections returned by VirusTotal included:
+
+| Security Vendor | Detection |
+|---|---|
+| **CrowdStrike** | Malicious confidence 100% |
+| **DeepInstinct** | MALICIOUS |
+| **Elastic** | Malicious — High Confidence |
+| **Microsoft** | Trojan:Win32/Kryptik |
+| **Kaspersky** | HEUR:Backdoor.Win32.Flagpro.gen |
+| **ESET-NOD32** | Win32/FlagPro.B Trojan |
+| **DrWeb** | BackDoor.Flagpro.1 |
+| **Trend Micro** | Backdoor.Win32.BUSYICE.ZYIJ |
+
+---
+
+## 🧠 My Analysis
+
+The **54/71 detection rate** gave me a high level of confidence that the file should be treated as malicious.
+
+I looked at the overall pattern instead of relying on a single antivirus result. Multiple security vendors independently classified the file as malicious, with several identifying it as a Trojan or backdoor.
+
+The repeated **FlagPro** and **Fragtor** family labels also provided additional context about the type of malware associated with the file.
+
+Based on these findings, I would treat the file as a **malicious artifact** and continue investigating the affected system if this were a real SOC incident.
+
+---
+
+## 🔐 Indicator of Compromise (IOC)
+
+### SHA-256 Hash
+
+```text
+54e6ea47eb04634d3e87fd7787e2136ccfbcc80ade34f246a12cf93bab527f6b
